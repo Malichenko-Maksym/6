@@ -1,0 +1,11 @@
+k=input('file name? ')
+f = open("copylines.txt","w")
+f.close()
+q = open(k)
+f = open("copylines.txt","a")
+z=q.readline()
+while z!='':
+    f.write(z)
+    z=q.readline()
+f.close()
+q.close()
